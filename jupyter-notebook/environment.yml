@@ -1,0 +1,29 @@
+name: recommendation-lab
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # 核心Python环境
+  - python=3.9
+  - pip=22.0.4
+  
+  # 数据分析基础包
+  - numpy=1.22.3
+  - pandas=1.4.2
+  - scikit-learn=1.1.2
+  
+  # 可视化相关
+  - matplotlib=3.5.2
+  - seaborn=0.11.2
+  - plotly=5.10.0
+  - ipywidgets=8.0.2
+  - jupyterlab=3.4.2
+  
+  # 中文显示支持
+  - fontconfig=2.13.1     # 字体配置工具
+  - fonts-noto-cjk=1.004 # 包含中文字体
+  
+  # 通过pip安装的包
+  - pip:
+    - notebook==6.4.12    # 固定经典notebook版本
+    - openpyxl==3.0.10    # 用于Excel支持
